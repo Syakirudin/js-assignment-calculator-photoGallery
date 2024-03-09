@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Currencies</title>
+</head>
+<body>
+    <h1>Available Currencies</h1>
+    <ul id="currencyList"></ul>
+
+    <script>
+        const url = 'https://open-weather13.p.rapidapi.com/city/landon';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '9eb70b95bfmshf82f478c819623ap168a65jsn7017f4f6b056',
+		'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = fetch(url, options);
+	const result = response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+    </script>
+</body>
+</html>

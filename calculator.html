@@ -208,46 +208,7 @@
   </div>
 </body>
 <script>
-    let firstNumber = '';
-    let secondNumber = '';
-    let operation = '';
 
-
-    
-    //function click number
-    function clickNumber(element) {
-      if (operation === '') {
-        firstNumber += element.value;
-      } else {
-        secondNumber += element.value;
-      }
-      console.log(firstNumber);
-      console.log(secondNumber);
-      display();
-    }
-
-    //function click operation  
-    function clickOperation(element) {
-      operation = element.value;
-      
-      console.log(operation)
-      display()
-    }
-
-    //function display input first , second , operation at display
-    function display() {
-    // Concatenate firstNumber, operation, and secondNumber with a space between them
-    let displayValue = firstNumber + " " + operation + " " + secondNumber;
-    document.getElementById('display').value = displayValue;
-}
-
-
-
-    //function for calculation
-
-    //function for delete/ reset
-    //function for 
-    
 </script>
 
 </html>
